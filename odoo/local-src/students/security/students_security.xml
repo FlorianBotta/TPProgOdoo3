@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <record model="ir.module.category" id="category_student_management">
+            <field name="name">Student management</field>
+            <field name="sequence">200</field>
+        </record>
+
+        <record model="res.groups" id="group_students">
+            <field name="name">Students</field>
+            <field name="category_id" ref="category_student_management"/>
+        </record>
+    </data>
+</odoo>
